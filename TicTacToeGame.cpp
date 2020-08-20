@@ -8,7 +8,7 @@ using namespace std;
 // Purpose of function is to create the tic tac toe game board
 void displayBoard(char board[][3]) {
     cout << endl;
-	cout << "       |     |     " << endl;
+    cout << "       |     |     " << endl;
     cout << "    " << board[0][0] << "  |  " << board[0][1] << "  |  " << board[0][2] << " " << endl;
     cout << "  _____|_____|_____" << endl;
     cout << "       |     |     " << endl;
@@ -101,7 +101,7 @@ int main() {
     bool tie = false;
 
     // array to represent the spots on the board
-	char board[3][3] = {{'1','2','3'},
+    char board[3][3] = {{'1','2','3'},
                         {'4','5','6'},
                         {'7','8','9'}};
 
@@ -115,7 +115,7 @@ int main() {
     cout << "Player 1 is X's and Player 2 is O's." << endl;
 
     // display the board
-	displayBoard(board);
+    displayBoard(board);
 
     while(!gameOver(board, tie)) { // while game is not over
 
